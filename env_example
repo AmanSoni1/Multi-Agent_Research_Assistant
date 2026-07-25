@@ -1,0 +1,21 @@
+# Copy this file to .env and fill in your keys.
+
+# Required: OpenRouter key for Writer, Critic, Retriever-reranker, and Planner (api mode).
+# Get one free at https://openrouter.ai/keys
+OPENROUTER_API_KEY="sk-"
+
+# Required: Tavily key for web search.
+# Get a free-tier key at https://tavily.com
+TAVILY_API_KEY="tvly-"
+
+# Optional: Planner backend. "api" (default) needs only OPENROUTER_API_KEY above.
+# "local" routes the Planner to Gemma 3 4B via Ollama instead -- no GPU/Ollama
+# required unless you explicitly opt into this.
+PLANNER_BACKEND=api
+
+# Only used if PLANNER_BACKEND=local
+PLANNER_LOCAL_MODEL=gemma3:4b
+OLLAMA_BASE_URL=http://localhost:11434
+
+# Optional: where ChromaDB persists its data (defaults to ./chroma_db)
+CHROMA_PERSIST_DIR=./chroma_db

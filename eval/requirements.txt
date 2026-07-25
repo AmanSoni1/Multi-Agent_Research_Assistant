@@ -1,0 +1,14 @@
+datasets==5.0.0
+langchain==0.3.30
+langchain-classic==1.0.8
+langchain-community==0.3.27
+langchain-core==0.3.86
+langchain-openai==0.3.27
+langchain-protocol==0.0.18
+langchain-text-splitters==0.3.11
+numpy==2.5.1
+openai==1.109.1
+pandas==3.0.3
+python-dotenv==1.2.2
+ragas==0.4.3
+tabulate==0.10.0
